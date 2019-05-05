@@ -1,11 +1,23 @@
 .App {
   text-align: center;
   display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid  green;
+}
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
 }
 .App> section{
-  margin-right: auto;
   background-color: rosybrown;
   min-height: 100vh;
+  flex:1;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
