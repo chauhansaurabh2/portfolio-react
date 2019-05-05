@@ -10,39 +10,24 @@ class App extends Component {
   };
   OnExperienceClick = () => {
     this.setState({
-      displayExperience:!this.state.displayExperience
-    })
+      displayExperience: !this.state.displayExperience
+    });
   };
-  RenderExperience(){
-    if(this.state.displayExperience){
-      return <Experience></Experience>
+  RenderExperience() {
+    if (this.state.displayExperience) {
+      return <Experience />;
     }
   }
   render() {
     return (
       <div className="App">
-        <div className="row">
-          <div className="col-2" align="center">
-            <NavBar OnExperienceClick={this.OnExperienceClick} />
-          </div>
-          <div className="col-10">
+        <nav  align="center">
+          <NavBar OnExperienceClick={this.OnExperienceClick} />
+        </nav>
+        <section>
           {this.RenderExperience()}
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Edit <code>src/App.js</code> and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
-          </div>
-        </div>
+          Hello sir
+        </section>
       </div>
     );
   }

@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display:flex;
+}
+.App> section{
+  margin-right: auto;
+  background-color: rosybrown;
+  min-height: 100vh;
 }
 
 .App-logo {
