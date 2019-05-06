@@ -4,7 +4,8 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <ul className="nav flex-column">
+        <h4 className="heading">Saurabh Chauhan Portfolio</h4>
+        <ul className="nav">
             <li>
               <img src="https://picsum.photos/200/300" className="img-fluid rounded"/>
             </li>
