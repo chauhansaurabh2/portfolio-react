@@ -1,6 +1,7 @@
 html,
 body {
   background-color: #ffeead;
+  height: 100vh;
   margin: 10px;
 }
 
@@ -25,8 +26,12 @@ body {
 .heading {
   display: none;
 }
+nav{
+  height: 100vh;
+}
 ul {
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 600px) {
@@ -42,5 +47,8 @@ ul {
   }
   img {
     display: none;
+  }
+  nav{
+    height: 0%;
   }
 }
